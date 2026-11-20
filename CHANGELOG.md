@@ -1,0 +1,35 @@
+# Changelog
+
+## 1.5.2 — Deeper cinematic edge vignette
+
+- Increased main and secondary blur and extended the diffusion layers.
+- Darkened the upper and lower viewport edges with matching soft shadow layers.
+- Tuned the mobile edge treatment so the stronger vignette remains visible on smaller screens.
+
+## 1.5.1 — Bun install and TypeScript peer compatibility
+
+- Downgraded TypeScript from 7.0.2 to 6.0.3 to fit the supported typescript-eslint 8.71.1 range (>=4.8.4 <6.1.0).
+- Updated bun.lock and removed TypeScript 7 platform-specific optional packages.
+- Pinned packageManager to Bun 1.4.3 and made build/verify scripts use Bun consistently.
+- Switched GitHub Actions to install Bun and run bun install --frozen-lockfile.
+- Added a Windows PowerShell verification script and an explicit untrusted lifecycle-script diagnostic.
+- Extended validation to prevent unsupported TypeScript versions and stale lockfile metadata from reappearing.
+
+## 1.5.0 — Production toolkit, smooth scrolling and transitions
+
+- Added shared fluid design tokens for typography, spacing, colors, surfaces, breakpoints and motion.
+- Added reusable GSAP primitives, scoped `@gsap/react` cleanup, and three act-based ScrollTrigger scenes.
+- Added Lenis smooth scrolling synchronized to the GSAP ticker, with native scrolling for reduced-motion users.
+- Added in-page curtain transitions and keyboard focus transfer for navigation.
+- Improved mobile navigation with `aria-expanded`, `aria-hidden`, `inert`, Escape handling and viewport reset.
+- Added skip navigation, focus visibility, reduced-motion support, SEO metadata, a local favicon, web manifest and robots policy.
+- Added ESLint, strict TypeScript, local-source validation and a single `npm run verify` quality gate.
+- Added GitHub Actions pull-request verification and push/manual GitHub Pages deployment, including a temporary first-run lockfile artifact.
+
+## 1.4.0 — Cinematic story choreography
+
+- Structured GSAP motion as a prologue, three chapter beats and an epilogue.
+- Added staggered title lines, chapter-specific arrival/hold/release motion and a scroll cue.
+- Paused the orbital outro when it leaves the viewport.
+- Expanded edge fade, haze and glow with regression validation.
+
